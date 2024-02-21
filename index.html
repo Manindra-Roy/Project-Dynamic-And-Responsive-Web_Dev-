@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta info -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta info about author -->
+    <meta name="description" content="Tect Tentacles the Ultimate Platform for Web Development">
+    <meta name="keywords" content="Best Website Developer, Web Dev, Web Developer, Development">
+    <meta name="author" content="Manindra Roy">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- google fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anta&family=Fredoka:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+    </style>
+    <!-- style sheets -->
+    <link rel="stylesheet" href="preLoader.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="respon-PSD.css">
+    <!-- title of web page -->
+    <title>Tech Tentacles</title>
+</head>
+<!-- start of body  -->
+
+<body onload="changeBgOnLoad()">
+    <!-- pre loader start  -->
+    <div class="pre-loader-bg" id="preLoader">
+        <div class="pre-loader">
+            <div class="load">
+                <div class="gear one">
+                    <svg id="blue" viewbox="0 0 100 100" fill="#94DDFF">
+                        <path
+                            d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="gear two">
+                    <svg id="pink" viewbox="0 0 100 100" fill="#FB8BB9">
+                        <path
+                            d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="gear three">
+                    <svg id="yellow" viewbox="0 0 100 100" fill="#FFCD5C">
+                        <path
+                            d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z">
+                        </path>
+                    </svg>
+                </div>
+                <div class="lil-circle"></div>
+                <svg class="blur-circle">
+                    <filter id="blur">
+                        <fegaussianblur in="SourceGraphic" stddeviation="13"></fegaussianblur>
+                    </filter>
+                    <circle cx="70" cy="70" r="66" fill="transparent" stroke="white" stroke-width="40"
+                        filter="url(#blur)">
+
+                    </circle>
+                </svg>
+            </div>
+            <div class='loader--text'></div>
+        </div>
+    </div>
+    <!-- pre loader end -->
+    <!-- header section -->
+    <header class="top-header">
+        <!-- nav section  -->
+        <nav class="nav" id="nav">
+            <!-- left nav section  -->
+            <div class="left-nav">
+                <a href="#" onclick="changeBg()" class="nav-logo-link"><img src="../images/Tech-Tentacles.png"
+                        alt="logo-image" class="nav-logo"></a>
+            </div>
+            <!-- right nav secton  -->
+            <div class="right-nav">
+                <!-- nav bar options -->
+                <div class="nav-options">
+                    <!-- nav bar ul list of options -->
+                    <ul class="nav-options-ul">
+                        <li><a href="https://github.com/Manindra-Roy/" target="_blank" class="github"><i
+                                    class="ri-github-fill"></i>&nbsp;GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/manindraroyofficial/" target="_blank"
+                                class="linkedin"><i class="ri-linkedin-box-fill"></i>&nbsp;Linkedin</a></li>
+                        <li><a href="https://twitter.com/Manindra_IND" target="_blank" class="twitter"><i
+                                    class="ri-twitter-x-fill"></i></i>&nbsp;Twitter</a></li>
+                        <li><a href="https://discord.gg/Tm6JjdGU9E" target="_blank" class="discord"><i
+                                    class="ri-discord-fill"></i>&nbsp;Discord</a></li>
+                        <li><a href="https://www.youtube.com/@TechTentaclesOfficial" target="_blank" class="youtube"><i
+                                    class="ri-youtube-fill"></i>&nbsp;YouTube</a></li>
+                    </ul>
+                </div>
+                <div class="go-to-footer">
+                    <a href="#footer" class="go-to-footer"><i class="ri-arrow-down-double-line"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- end of heard section  -->
+    <!-- start of main section  -->
+    <main class="main-section">
+
+        <!-- The  Bg video -->
+        <video autoplay muted loop id="bg-video" onloadeddata="preLoaderFun()">
+            <source id="BgVideo" src="/videos/" type="video/mp4">
+        </video>
+
+        <!-- start of side bar   -->
+        <aside class="side-bar">
+            <h2>Projects</h2>
+            <ul class="project-links">
+                <li><a id="p0" href="#" onclick='onClickFun0("p0")'>First Project</a></li>
+                <li><a id="p1" href="#" onclick='onClickFun0("p1")'>Second Project</a></li>
+                <li><a id="p2" href="#" onclick='onClickFun0("p2")'>Third Project</a></li>
+
+            </ul>
+
+
+        </aside>
+        <!-- start of hero section  -->
+        <div class="hero">
+            <section class="hero-section">
+                <!-- top section of hero section  -->
+                <div class="top-section">
+                    <!-- top left hero section  -->
+                    <div class="left-top-section">
+                        <h1 id="mainHeading">Welcome.</h1>
+                    </div>
+                    <div class="right-top-section"></div>
+                </div>
+                <div class="middle-section">
+                    <h2 id="subHeading">About</h2>
+                    <p id="paragraph">
+                        GM, I'm Manindra. I enjoy building dynamic, creative products from start to finish. Focused on
+                        developing intuitive experiences that constantly grow and improve based on user metrics. Always
+                        shipping.</p>
+                </div>
+                <div class="last-section">
+                    <div class="left-last-section">
+                        <span>Follow Me On</span>
+                        <ul class="follow-ul">
+                            <li><a href="https://www.linkedin.com/in/manindraroyofficial/" target="_blank"
+                                    class="linkedin"><i class="ri-linkedin-box-fill"></i>&nbsp;Linkedin</a></li>
+                            <li> <a href="https://twitter.com/Manindra_IND" target="_blank" class="twitter"><i
+                                        class="ri-twitter-x-fill"></i></i>&nbsp;Twitter</a></li>
+                            <li> <a href="https://github.com/Manindra-Roy/" target="_blank" class="github"><i
+                                        class="ri-github-fill"></i>&nbsp;GitHub</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-last-section">
+                        <a href="#">Contact Me</a>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    <!-- end of main section  -->
+    <!-- start of footer section  -->
+    <footer class="footer" id="footer">
+        <!-- start of left footer  -->
+        <div class="left-footer">
+            <span class="copy-right">Tech Tentacles &copy;2024 | All Rights Reserved.</span>
+        </div>
+        <!-- start of right footer  -->
+        <div class="right-footer">
+            <div class="footer-options"></div>
+            <div class="go-to-nav">
+                <a href="#nav" class="go-to-footer"><i class="ri-arrow-up-double-line"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer section  -->
+    <script src="script.js"></script>
+    <script src="contents.js"></script>
+</body>
+<!-- end of body  -->
+
+</html>
