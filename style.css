@@ -160,7 +160,7 @@ main .side-bar {
   font-style: normal;
   font-variation-settings: "wdth" 100;
   font-size: 2.5vw;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(29, 26, 26, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 7px;
   margin-bottom: 1vw;
@@ -176,7 +176,7 @@ main .side-bar {
   padding-top: 1.5vw;
   padding-bottom: 1.5vw;
   list-style-type: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(29, 26, 26, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 7px;
   font-family: "Anta", sans-serif;
@@ -206,8 +206,7 @@ main .hero {
 .hero > .hero-section {
   width: 95%;
   height: 90%;
-  background-color: rgba(255, 255, 255, 0.1);
-  /* box-shadow: 0 25px 45px rgba(0, 0, 0, 0.2); */
+  background-color: rgba(29, 26, 26, 0.2);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 7px;
 }

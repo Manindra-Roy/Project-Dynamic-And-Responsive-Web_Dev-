@@ -40,17 +40,17 @@ const onClickFun1 = (i) => {
 
 /////////////////////////////////////
 // change bg when click on logo***
-let i = 1;
+let i = 0;
 const changeBg = () => {
-  if (i < 9) {
+  if (i < 7) {
     ++i;
-    let video = `v${i}.webm`;
+    let video = `wv${i}.webm`;
     changeVideo(video);
     // console.log(video);
   } else {
-    i = 1;
+    i = 0;
     ++i;
-    let video = `v${i}.webm`;
+    let video = `wv${i}.webm`;
     changeVideo(video);
     // console.log(video);
   }
@@ -63,8 +63,8 @@ function changeVideo(name) {
 }
 // change bg on load****
 const changeBgOnLoad = () => {
-  let j = Math.floor(Math.random() * 8) + 2;
-  let video = `v${j}.webm`;
+  let j = Math.floor(Math.random() * 7) + 1;
+  let video = `wv${j}.webm`;
   changeVideo(video);
   // console.log(j);
 };
