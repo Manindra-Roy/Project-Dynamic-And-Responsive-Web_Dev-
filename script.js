@@ -1,3 +1,12 @@
+/////////////////////////////////////
+// preLoader function***
+let preLoader = document.getElementById("preLoader");
+let preLoaderFun = () => {
+  preLoader.style.display = "none";
+};
+///////////////////////////////////////
+
+
 ////////////////////////////////////
 // switching apis***
 
@@ -75,10 +84,3 @@ function changeVideo(name) {
   video.load();
 }
 
-/////////////////////////////////////
-// preLoader function***
-let preLoader = document.getElementById("preLoader");
-let preLoaderFun = () => {
-  preLoader.style.display = "none";
-};
-///////////////////////////////////////
